@@ -8,6 +8,7 @@ namespace modul3_1302200016
 {
     internal class KodeBuah_1
     {
+		// Inisialisasi static kode buah
 		public static KodeBuah_1 Apel = new KodeBuah_1("Apel", "A000");
 		public static KodeBuah_1 Aprikot = new KodeBuah_1("Aprikot", "B000");
 		public static KodeBuah_1 Alpukat = new KodeBuah_1("Alpukat", "C000");
@@ -23,6 +24,7 @@ namespace modul3_1302200016
 		public static KodeBuah_1 Melon = new KodeBuah_1("Melon", "N000");
 		public static KodeBuah_1 Semangka = new KodeBuah_1("Semangka", "O000");
 
+		// tambahkan static diatas kedalam array
 		public static KodeBuah_1[] JenisBuah = new KodeBuah_1[]
 		{
 			Apel, Aprikot, Alpukat, Pisang, Paprika, Blackberry, Ceri, Kelapa, Jagung, Kurma, Durian, Anggur, Melon, Semangka
@@ -39,6 +41,7 @@ namespace modul3_1302200016
 
 		public static KodeBuah_1 GetKodeBuah(string kode)
 		{
+		
 			foreach (var b in JenisBuah)
 			{
 				if (b.GetKode() == kode) return b;
